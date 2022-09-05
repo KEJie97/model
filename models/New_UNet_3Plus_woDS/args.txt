@@ -1,0 +1,17 @@
+name: New_UNet_3Plus_woDS
+arch: UNet_3Plus
+deepsupervision: False
+dataset: New
+input_channels: 4
+image_ext: png
+mask_ext: png
+aug: False
+loss: BCEDiceLoss
+epochs: 10000
+early_stop: 10
+batch_size: 3
+optimizer: Adam
+lr: 0.03
+momentum: 0.9
+weight_decay: 0.0001
+nesterov: False
